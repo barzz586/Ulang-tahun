@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Ulang Tahun Ibu</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.5em;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #fff;
+      color: #ff6f91;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff6f91;
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Selamat Ulang Tahun, Ibu Tercinta!</h1>
+  <p id="pesan">Semoga Ibu selalu sehat, bahagia, dan diberkahi umur panjang.</p>
+  <button onclick="ubahPesan()">Klik untuk Ucapan Khusus</button>
+
+  <script>
+    function ubahPesan() {
+      const pesan = document.getElementById("pesan");
+      pesan.innerText = "Terima kasih atas cinta, pengorbanan, dan semua doa Ibu. Kami mencintaimu selamanya!";
+    }
+  </script>
+
+</body>
+</html>
